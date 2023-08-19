@@ -1,0 +1,27 @@
+Title: Vessel # 1
+PRESSURE, 1
+Length(m), Width(m), Alpha1(m),  Alpha2(m), Beta(m), P(unit)
+27.43,  2.0, 0.5, 0.5, 0.5, 0.2
+Time, X(m), Y(m)  (relative to the orgin of the coordinates)
+0.0     50.0   550.0
+118.80  1000.0 75.0
+
+
+30 yards
+
+see speed.m
+mph to m/s 0.44704
+32 mph = 14.30 m/s
+52feet=15.8496 m
+
+x0=50.0;
+y0=550.0;
+x1=600.0;
+y1=310.0;
+
+x2=1000.0;
+y2=y0+(y1-y0)/(x1-x0)*(x2-x0)
+% y2=135.45
+
+dis=sqrt((x2-x0)^2+(y2-y0)^2)
+% dis=1599.0
