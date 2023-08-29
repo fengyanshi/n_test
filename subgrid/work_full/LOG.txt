@@ -1,0 +1,80 @@
+ -------------- LOG FILE -----------------
+ TEST RUN                                                                        
+  --------------input start --------------
+                                          
+ -------------- PARALLEL -----------------
+ PX   =  4 PY   =  1
+                                          
+ -------------- GRID INFO -----------------
+ Mglob=    2500 Nglob=     100
+ DX=        2.00 DY=        2.00
+ DEPTH_TYPE:DATA                                              
+ DEPTH_FILE:dep_full_2500x100.txt                             
+                                          
+ -------------- TIME INFO -----------------
+         PLOT_START_TIME Default:  0.0 s
+                             StationOutputBuffer not specified, use default:1000
+ TOTAL_TIME=    96000.00
+ PLOT_INTV=       100.00
+ SCREEN_INTV=      600.00
+                                          
+ -------------- HOT START -----------------
+                                          
+ -------------- STILL WATER INFO -----------------
+       WaterLevel =      0.63000
+                                          
+ -------------- WAVEMAKER -----------------
+ WAVEMAKER:ABSORBING_GENERATING                              
+         absorbing generating wave maker
+                                use DATA
+                                          
+ -------------- PERIODIC BC -----------------
+  PERIODIC: T
+                                          
+ -------------- SPONGE -----------------
+              No WavemakerCurrentBalance
+                                          
+ -------- OBSTACLE and BREAKWATER -----------------
+ OBSTACLE_FILE:   NO
+    BREAKWATER_FILE:   NO
+     BreakWaterAbsorbCoef Default:  10.0
+                                          
+ -------------- PHYSICS -----------------
+  Summary of Physics
+ Gamma1 =         1.00
+ Gamma2 =         1.00
+Beta_ref=        -0.53
+ Gamma3 =         1.00
+ VISCOSITY_BREAKING IS USED
+             Friction_Matrix Default:  constant Cd
+  Cd_fixed (if you used fixed Cd) =        0.00
+                                          
+ -------------- NUMERICS -----------------
+ TIME_SCHEME:Runge_Kutta                                       
+  CONSTRUCTION                              NOT DEFINED, USE HLL
+ CONSTRUCTION:HLLC                                              
+  HIGH_ORDER                     NOT DEFINED, USE FOURTH-ORDER
+ HIGH_ORDER:FOURTH                                            
+ CFL=        0.50
+  FroudeCap=        5.00
+          USE MIN(MinDepthFrc, MinDepth)
+ MinDepth=    0.001000
+ MinDepthFrc=    0.001000
+                               Dont record wave arrival time
+                                          
+ --------- WAVE BREAKING -----------------
+                      ROLLER_EFFECT:  NO
+ Cbrk1 =    0.450000
+ Cbrk2 =    0.350000
+  WAVEMAKER_Cbrk =         0.650000
+           WAVEMAKER_VIS Default:  FALSE
+                                          
+ -------- WAVE-AVERAGED PROPERTY -----------------
+ T_INTV_mean =  200.000000
+ STEADY_TIME =  200.000000
+ C_smg =    0.250000
+                    nu_bkg Default:  0.0
+                                          
+ -------------- OUTPUT INFO -----------------
+ RESULT_FOLDER:output/                                           
+ FIELD_IO_TYPE = BINARY                                                                          
